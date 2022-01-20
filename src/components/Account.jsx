@@ -33,9 +33,9 @@ function Account() {
     return (
       <div
         style={styles.account}
-        onClick={() => authenticate({ signingMessage: "Hello World!" })}
+        onClick={() => authenticate({ signingMessage: "Web3 Sign in" })}
       >
-        <p style={styles.text}>Authenticate</p>
+        <p style={styles.text}>Connect Wallet</p>
       </div>
     );
   }

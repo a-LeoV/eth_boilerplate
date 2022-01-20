@@ -1,14 +1,12 @@
-import { useNativeBalance } from "hooks/useNativeBalance";
-import { n4 } from "helpers/formatters";
+import { useMoralis, useNativeBalance } from "react-moralis";
 
 function NativeBalance(props) {
-  const { balance, nativeName } = useNativeBalance(props);
+  const { data: balance } = useNativeBalance(props);
+  const { account, isAuthenticated } = useMoralis();
 
-  return (
-    <div style={{ textAlign: "center", whiteSpace: "nowrap" }}>{`${n4.format(
-      balance.formatted
-    )} ${nativeName}`}</div>
-  );
+  if (!account || !isAuthenticated) return null;
+
+  return <div style={{ textAlign: "center", whiteSpace: "nowrap" }}>{balance.formatted}</div>;
 }
 
 export default NativeBalance;
