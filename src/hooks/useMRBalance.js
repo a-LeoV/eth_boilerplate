@@ -13,7 +13,7 @@ export const useMRBalance = () => {
     data,
     error,
     isLoading,
-  } = useMoralisWeb3ApiCall(account.getNFTsForContract, { chain: chainId, address: walletAddress, token_address: "0xdA2fFAE045D03cC9aDf4d860773B61263dbA4EE3" });
+  } = useMoralisWeb3ApiCall(account.getNFTsForContract, { chain: chainId, address: walletAddress, token_address: "0xaa42735430e055A0A7372a6f1353c22655269c4A" });
   
 
   useEffect(() => {

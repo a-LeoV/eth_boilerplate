@@ -830,13 +830,6 @@ function MoralisDappProvider({ children }) {
       "type": "function"
     },
     {
-      "inputs": [],
-      "name": "SetApprovalForCR",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
           "internalType": "string",
@@ -1339,7 +1332,7 @@ function MoralisDappProvider({ children }) {
     }
   ]`)
   const [crAddress, setCRAddress] = useState("0xBe169ba8097583318A84014657eEcB5b32b283B8");
-  const [mrAddress, setMRAddress] = useState("0xdA2fFAE045D03cC9aDf4d860773B61263dbA4EE3");
+  const [mrAddress, setMRAddress] = useState("0xaa42735430e055A0A7372a6f1353c22655269c4A");
   
 
   useEffect(() => {
